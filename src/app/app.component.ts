@@ -9,15 +9,4 @@ import { StatService } from './services/stat.service';
 })
 export class AppComponent {
   title = 'AngularExam';
-  stat: Statistique[];
-
-  constructor(public singletonStat: StatService) {
-    this.stat = this.singletonStat.tabStat;
-  }
-
-  deleteStat(stat: Statistique) {
-    let index = this.stat.indexOf(stat);
-    this.stat.splice(index, 1);
-    console.log(' HELLO FROM DETELE BUTTON');
-  }
 }
