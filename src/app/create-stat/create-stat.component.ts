@@ -31,6 +31,6 @@ export class CreateStatComponent implements OnInit {
     );
     this.singleTonStat.tabStat.push(stat);
 
-    this.router.navigate(['dsiplay']);
+    this.router.navigate(['display']);
   }
 }
