@@ -1,2 +1,8 @@
-<app-miniature-stat [stat]="s" *ngFor="let s of stat" (delete)="deleteStat(s)">
-</app-miniature-stat>
+<div class="container">
+  <app-miniature-stat
+    [stat]="s"
+    *ngFor="let s of stat"
+    (delete)="deleteStat(s)"
+  >
+  </app-miniature-stat>
+</div>

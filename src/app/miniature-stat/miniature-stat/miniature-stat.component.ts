@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { StatNico } from 'src/app/models/stat-nico';
 import { Statistique } from 'src/app/models/statistique.classe';
 
 @Component({
@@ -7,7 +8,7 @@ import { Statistique } from 'src/app/models/statistique.classe';
   styleUrls: ['./miniature-stat.component.scss'],
 })
 export class MiniatureStatComponent implements OnInit {
-  @Input() stat!: Statistique;
+  @Input() stat!: StatNico;
   @Output() delete: EventEmitter<string> = new EventEmitter();
   constructor() {}
 

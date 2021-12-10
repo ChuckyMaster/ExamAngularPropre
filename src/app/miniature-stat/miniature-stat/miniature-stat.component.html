@@ -2,8 +2,12 @@
   <h2>{{ stat.title }}</h2>
 
   <ul>
-    <li color="primary">{{ stat.value }} {{ stat.unit }}</li>
+    <li color="primary">{{ stat.title }} {{ stat.icon }}</li>
+    <li>{{ stat.updatedAt }}</li>
+    <li>{{ stat.appreciation }}</li>
+    <li>{{ stat.id }}</li>
+    <li>{{ stat.value }}</li>
   </ul>
 
-  <button class="btn btn-primary" (click)="suppStat()">Supprimer</button>
+  <button mat-button color="primary" (click)="suppStat()">Supprimer</button>
 </div>

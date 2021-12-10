@@ -1,3 +1,11 @@
+button {
+  margin: 1rem;
+}
+
+ul {
+  padding: 1rem;
+}
+
 li {
   color: black;
 }
@@ -7,7 +15,7 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 300px;
   margin: 2rem;
   background-color: rgba(190, 137, 137, 0.342);
 }

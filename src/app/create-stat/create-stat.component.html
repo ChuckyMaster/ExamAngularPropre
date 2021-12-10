@@ -2,18 +2,29 @@
   <h2>Ajouter des données</h2>
 
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
-    <div class="form-g">
-      <label> Titre </label>
-      <input type="text" formControlName="title" />
-    </div>
-    <div class="form-g">
+    <mat-form-field appearance="fill">
+      <mat-label>Titre</mat-label>
+      <input matInput formControlName="title" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Valeur</mat-label>
+      <input matInput formControlName="value" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Unité</mat-label>
+      <input matInput formControlName="unit" />
+    </mat-form-field>
+
+    <!-- <div class="form-g">
       <label> Valeur </label>
       <input type="number" formControlName="value" />
     </div>
     <div class="form-g">
       <label> Unité </label>
       <input type="text" formControlName="unit" />
-    </div>
+    </div> -->
 
     <button type="submit" class="btn btn-primary">ADD</button>
   </form>
