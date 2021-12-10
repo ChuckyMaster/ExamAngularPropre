@@ -1,13 +1,7 @@
 <h1>TITRE DE MES DEUX STATISTIQUE</h1>
 
-<h2>{{ stat1.title }}</h2>
-<h2>{{ stat2.title }}</h2>
-
 <!-- Exercice 5 -->
-<p>Exo 5</p>
-<app-miniature-stat [stat]="stat1"> </app-miniature-stat>
-<app-miniature-stat [stat]="stat2"> </app-miniature-stat>
 
 <!-- Exercice 6 -->
 <p>Exo 6 = Boucle</p>
-<app-miniature-stat [stat]="s" *ngFor="let s of tabStat"> </app-miniature-stat>
+<app-miniature-stat [stat]="s" *ngFor="let s of stat"> </app-miniature-stat>
